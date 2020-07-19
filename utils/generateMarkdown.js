@@ -1,43 +1,20 @@
-function renderBadge(license) {
-  if (license !== "None") {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`
-  }
-  return ''
-}
-
-function renderLink(license) {
-  if (license !== "None") {
-    return (
-      `\n* [License](#license)\n`
-    )
-  }
-  return ''
-}
-
-function renderSection(license) {
-  if (license !== "None") {
-    return (
-      `## License
-
-This project is licensed by ${license}.`
-    )
-  }
-  return ''
-}
-
-
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderBadge(data.license)}
+${renderBadge(data.license)}
 
-## Description
+## Github URL 🌐
+
+[${data.github}](https://github.com/${data.github}/)
+
+## Description 📝
 
 ${data.description}
 
-## Table of Contents
 
-* [Dependencies](#dependencies)
+## Table of Contents 🗒
+
+* [Installations](#dependencies)
 
 * [Usage](#usage)
 
@@ -47,9 +24,8 @@ ${renderLink(data.license)}
 
 * [Test](#test)
 
-* [Questions](#questions)
 
-## Dependencies
+## Installations (Dependencies) 💻
 
 To install dependencies, run these commands:
 
@@ -57,19 +33,22 @@ To install dependencies, run these commands:
 ${data.dependencies}
 \`\`\`
 
-## Usage
+
+## Usage 🏆
 
 ${data.usage}
 
-${renderSection(data.License)}
+${renderSection(data.license)}
 
-## Contributors
+
+## Contributors 😃
 
 ${data.contributors}
-${data.email}
-[${data.github}](https://github.com/${data.github}/)
 
-## Tests
+Contact me at ${data.email}
+
+
+## Tests 🧪
 
 To run tests, run these commands:
 
@@ -77,8 +56,41 @@ To run tests, run these commands:
 ${data.test}
 \`\`\`
 
-
 `;
+}
+
+// Function to render badge
+function renderBadge(license) {
+  if (license !== "None") {
+    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`
+  }
+  return ''
+}
+
+// Function to render link
+function renderLink(license) {
+  if (license !== "None") {
+    return (
+      `\n* [License](#license)\n`
+    )
+  }
+  return ''
+}
+
+
+// Function to render section
+function renderSection(license) {
+  if (license !== "None") {
+    return (
+      `## License 📛
+
+      Copyright © ${license}. All rights reserved. 
+      
+      Licensed under the ${license} license.`
+
+    )
+  }
+  return ''
 }
 
 module.exports = generateMarkdown;
