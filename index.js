@@ -1,9 +1,10 @@
+// Dependencies
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// Array of questions for user to generate README.md
 const questions = [
 
     {
@@ -30,7 +31,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license does your project have?",
-        choices: ["MIT", "APACHE", "GPL", "BSD", "None"]
+        choices: ["MIT", "APACHE2.0", "Boost1.0", "GPL3.0", "BSD2" ,"BSD3", "None"]
     },
     {
         type: "input",
@@ -67,9 +68,8 @@ function init() {
     inquirer.prompt(questions)
         .then((inquirerAnswers) => {
             console.log("Generating.... Please wait....");
-            writeToFile("README.md", generateMarkdown({ ...inquirerAnswers }));
+            writeToFile("./dist/README.md", generateMarkdown({ ...inquirerAnswers }));
         })
-
 }
 
 // function call to initialize program
