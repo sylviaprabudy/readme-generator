@@ -38,7 +38,7 @@ ${data.dependencies}
 
 ${data.usage}
 
-${renderSection(data.License)}
+${renderSection(data.license)}
 
 
 ## Contributors 😃
