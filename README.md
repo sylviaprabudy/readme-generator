@@ -1,4 +1,4 @@
-# Weather Dashboard
+# README.md Generator
 
 ### Github : https://github.com/sylviaprabudy/readme-generator
 
@@ -31,7 +31,7 @@ A Node.js based tool where users can use to generate read me for their repo proj
 
 ![](assets/img/readme-vscode.png)
 
-![](assets/img/ready-readme.jpg)
+![](assets/img/ready-readme.png)
 
 ## Technologies Use
 <p><a href="https://nodejs.org/">Node.js</a></p>
