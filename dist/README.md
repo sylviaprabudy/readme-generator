@@ -1,4 +1,4 @@
-# Professional README Generator
+# Readme Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
 
 ## Github URL 🌐
@@ -36,7 +36,7 @@ npm i
 
 ## Usage 🏆
 
-To generate a read me
+To generate a readme
 
 ## License 📛
 
