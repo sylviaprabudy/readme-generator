@@ -37,13 +37,13 @@ const questions = [
         type: "input",
         name: "dependencies",
         message: "Any dependencies to install?",
-        //default: "npm i"
+        default: "npm i"
     },
     {
         type: "input",
         name: "test",
         message: "What command should be run to run tests?",
-        //default: "npm test"
+        default: "npm test"
     },
     {
         type: "input",

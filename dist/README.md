@@ -1,13 +1,13 @@
-# fdfds
-![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)
+# Professional README Generator
+![GitHub license](https://img.shields.io/badge/license-MIT-yellowgreen.svg)
 
 ## Github URL 🌐
 
-[Sylvia](https://github.com/Sylvia/)
+[sylviaprabudy](https://github.com/sylviaprabudy/)
 
 ## Description 📝
 
-gdsgs
+It’s a Node.js based tool where users can use to generate read me for their repo projects.
 
 
 ## Table of Contents 🗒
@@ -30,26 +30,26 @@ gdsgs
 To install dependencies, run these commands:
 
 ```
-
+npm i
 ```
 
 
 ## Usage 🏆
 
-
+To generate a read me
 
 ## License 📛
 
-      Copyright © GPL3.0. All rights reserved. 
+      Copyright © MIT. All rights reserved. 
       
-      Licensed under the GPL3.0 license.
+      Licensed under the MIT license.
 
 
 ## Contributors 😃
 
-sdfs
+Sylvia Prabudy
 
-Contact me at dsds
+Contact me at sylviaprabudy@gmail.com
 
 
 ## Tests 🧪
@@ -57,6 +57,6 @@ Contact me at dsds
 To run tests, run these commands:
 
 ```
-
+npm test
 ```
 
