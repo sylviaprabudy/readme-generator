@@ -1,6 +1,8 @@
 # README.md Generator
 
-### Github : https://github.com/sylviaprabudy/readme-generator
+### Github: https://github.com/sylviaprabudy/readme-generator
+
+### Walkthrough video: https://drive.google.com/file/d/1A7b0pk-0th2LrLx6umeJ_9QA58iySBOG/view
 
 ## Description
 A Node.js based tool where users can use to generate read me for their repo projects.
